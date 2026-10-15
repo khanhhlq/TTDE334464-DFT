@@ -1,0 +1,19 @@
+# Doc RTL va module scan flip-flop.
+read_verilog rtl/full_scan/uart_tx_scan.v rtl/common/scan_dff.v
+hierarchy -check -top uart_tx_scan
+
+# Tong hop generic, flatten hierarchy, khong recode FSM.
+synth -top uart_tx_scan -flatten -nofsm -noabc
+
+# Dua enable/reset dong bo thanh logic o dau vao D.
+dffunmap
+
+# Chon tap cong phu hop voi bo chuyen doi.
+abc -g AND,OR,XOR,XNOR
+
+clean
+check -assert
+stat
+
+write_verilog -noattr build/tx_full_scan/uart_tx_scan_generic.v
+write_json build/tx_full_scan/uart_tx_scan_generic.json

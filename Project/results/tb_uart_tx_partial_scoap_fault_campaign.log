@@ -1,0 +1,33 @@
+Time resolution is 1 ps
+PASS GOLDEN: P0 response=011000
+NOT_DETECTED: P0 F0
+DETECTED: P0 F1 good=011000 faulty=011100
+DETECTED: P0 F2 good=011000 faulty=010000
+NOT_DETECTED: P0 F3
+DETECTED: P0 F4 good=011000 faulty=001000
+NOT_DETECTED: P0 F5
+NOT_DETECTED: P0 F6
+DETECTED: P0 F7 good=011000 faulty=111000
+PASS GOLDEN: P1 response=100100
+DETECTED: P1 F0 good=100100 faulty=100000
+NOT_DETECTED: P1 F1
+NOT_DETECTED: P1 F2
+DETECTED: P1 F3 good=100100 faulty=101100
+NOT_DETECTED: P1 F4
+DETECTED: P1 F5 good=100100 faulty=110100
+DETECTED: P1 F6 good=100100 faulty=000100
+NOT_DETECTED: P1 F7
+Fault_ID  D_bit  SA  P0  P1  Union
+0         11     0   0   1   1
+1         11     1   1   0   1
+2         12     0   1   0   1
+3         12     1   0   1   1
+4         13     0   1   0   1
+5         13     1   0   1   1
+6         14     0   0   1   1
+7         14     1   1   0   1
+Detected = 8/8
+Selected RTL fault coverage = 100.00%
+Errors = 0
+PASS: SCOAP partial-scan selected fault campaign
+$finish called at time : 2886 ns : File "C:/Users/phucn/Documents/DFT_Design for Test/Project/tb/tb_uart_tx_partial_scoap_fault_campaign.v" Line 229

@@ -1,0 +1,9 @@
+Time resolution is 1 ps
+PARTIAL SCAN_LENGTH = 6
+PASS: shift 1 pattern=000000 response=000000
+PASS: shift 2 pattern=000001 response=000001
+PASS: shift 3 pattern=000010 response=000010
+PASS: shift 4 pattern=000011 response=000011
+PASS: shift 5 pattern=000100 response=000100
+PASS: shift 6 pattern=000101 response=000101
+PASS: shift 7 pattern=000110 response=000110

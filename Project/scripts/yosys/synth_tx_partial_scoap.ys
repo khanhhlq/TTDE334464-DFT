@@ -1,0 +1,15 @@
+read_verilog rtl/common/scan_dff.v
+read_verilog rtl/partial_scan/uart_tx_partial_scoap.v
+
+chparam -set CLKS_PER_BIT 16 uart_tx_partial_scoap
+hierarchy -check -top uart_tx_partial_scoap
+
+synth -top uart_tx_partial_scoap -flatten -nofsm -noabc
+dffunmap
+abc -g AND,OR,XOR,XNOR
+clean
+check -assert
+stat
+
+write_verilog -noattr build/tx_partial_scoap/netlist.v
+write_json build/tx_partial_scoap/netlist.json

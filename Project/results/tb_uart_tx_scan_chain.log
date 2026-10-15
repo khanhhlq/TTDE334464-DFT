@@ -1,0 +1,35 @@
+Time resolution is 1 ps
+SCAN_LENGTH = 18
+PASS: shift test 1 - pattern=000000000000000000 response=000000000000000000
+PASS: shift test 2 - pattern=111111111111111111 response=111111111111111111
+PASS: shift test 3 - pattern=101010101010101010 response=101010101010101010
+PASS: shift test 4 - pattern=010101010101010101 response=010101010101010101
+PASS: shift test 5 - pattern=000000000000000001 response=000000000000000001
+PASS: shift test 6 - pattern=000000000000000010 response=000000000000000010
+PASS: shift test 7 - pattern=000000000000000100 response=000000000000000100
+PASS: shift test 8 - pattern=000000000000001000 response=000000000000001000
+PASS: shift test 9 - pattern=000000000000010000 response=000000000000010000
+PASS: shift test 10 - pattern=000000000000100000 response=000000000000100000
+PASS: shift test 11 - pattern=000000000001000000 response=000000000001000000
+PASS: shift test 12 - pattern=000000000010000000 response=000000000010000000
+PASS: shift test 13 - pattern=000000000100000000 response=000000000100000000
+PASS: shift test 14 - pattern=000000001000000000 response=000000001000000000
+PASS: shift test 15 - pattern=000000010000000000 response=000000010000000000
+PASS: shift test 16 - pattern=000000100000000000 response=000000100000000000
+PASS: shift test 17 - pattern=000001000000000000 response=000001000000000000
+PASS: shift test 18 - pattern=000010000000000000 response=000010000000000000
+PASS: shift test 19 - pattern=000100000000000000 response=000100000000000000
+PASS: shift test 20 - pattern=001000000000000000 response=001000000000000000
+PASS: shift test 21 - pattern=010000000000000000 response=010000000000000000
+PASS: shift test 22 - pattern=100000000000000000 response=100000000000000000
+PASS: capture test 23
+  loaded   = 001010100010100101
+  response = 001011000010100101
+PASS: capture test 24
+  loaded   = 001111100010100101
+  response = 110000000010100101
+PASS: capture test 25
+  loaded   = 010111111101010011
+  response = 111000011101010011
+PASS: UART scan tests - 25/25 tests passed
+$finish called at time : 9066 ns : File "C:/Users/phucn/Documents/DFT_Design for Test/Project/tb/tb_uart_tx_scan_chain.v" Line 246

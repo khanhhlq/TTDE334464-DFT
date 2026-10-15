@@ -1,0 +1,22 @@
+# Doc UART TX goc.
+read_verilog rtl/baseline/uart_tx.v
+
+# Kiem tra module top.
+hierarchy -check -top uart_tx
+
+# Tong hop va giu nguyen ma hoa FSM.
+synth -top uart_tx -flatten -nofsm -noabc
+
+# Chuyen reset/enable dong bo thanh logic tai dau vao D.
+dffunmap
+
+# Anh xa sang cac cong logic co ban.
+abc -g AND,OR,XOR,XNOR
+
+clean
+check -assert
+stat
+
+# Xuat netlist de phan tich.
+write_verilog -noattr build/tx_baseline/netlist.v
+write_json build/tx_baseline/netlist.json

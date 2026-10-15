@@ -1,0 +1,34 @@
+Time resolution is 1 ps
+PASS: baseline P0 response=00016
+PASS: baseline P1 response=00019
+NOT_DETECTED: P0 F0 response=00016
+DETECTED: P0 F1 good=00016 faulty=00017
+DETECTED: P0 F2 good=00016 faulty=00014
+NOT_DETECTED: P0 F3 response=00016
+DETECTED: P0 F4 good=00016 faulty=00012
+NOT_DETECTED: P0 F5 response=00016
+NOT_DETECTED: P0 F6 response=00016
+DETECTED: P0 F7 good=00016 faulty=0001e
+DETECTED: P1 F0 good=00019 faulty=00018
+NOT_DETECTED: P1 F1 response=00019
+NOT_DETECTED: P1 F2 response=00019
+DETECTED: P1 F3 good=00019 faulty=0001b
+NOT_DETECTED: P1 F4 response=00019
+DETECTED: P1 F5 good=00019 faulty=0001d
+DETECTED: P1 F6 good=00019 faulty=00011
+NOT_DETECTED: P1 F7 response=00019
+Fault_ID  scan_d_bit  SA_value  P0  P1  Union
+0         11          0         0   1   1
+1         11          1         1   0   1
+2         12          0         1   0   1
+3         12          1         0   1   1
+4         13          0         1   0   1
+5         13          1         0   1   1
+6         14          0         0   1   1
+7         14          1         1   0   1
+P0 detected = 4/8
+P1 detected = 4/8
+Union detected = 8/8
+Selected RTL fault coverage = 100.00%
+PASS: partial-scan selected RTL fault campaign
+$finish called at time : 3406 ns : File "C:/Users/phucn/Documents/DFT_Design for Test/Project/tb/tb_uart_tx_partial_fault_campaign.v" Line 277

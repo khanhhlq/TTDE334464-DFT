@@ -1,0 +1,8 @@
+Time resolution is 1 ps
+PASS CAPTURE: loaded=010110 response=011010
+PASS CAPTURE: loaded=100001 response=100101
+Shift tests   = 64
+Capture tests = 2
+Errors        = 0
+PASS: SCOAP partial-scan chain and capture
+$finish called at time : 9926 ns : File "C:/Users/phucn/Documents/DFT_Design for Test/Project/tb/tb_uart_tx_partial_scoap_scan_chain.v" Line 210

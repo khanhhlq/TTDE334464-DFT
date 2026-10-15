@@ -1,0 +1,211 @@
+Time resolution is 1 ps
+
+=== PARTIAL SCOAP TEST CYCLES ===
+Pattern Reset_prepare Wait Load Capture Unload Observe Total
+P0      4             1    6    1       6      192     210
+PASS: golden P0 recorded
+P1      4             1    6    1       6      192     210
+PASS: golden P1 recorded
+P2      20             0    6    1       6      192     225
+PASS: golden P2 recorded
+P3      20             0    6    1       6      192     225
+PASS: golden P3 recorded
+Total cycles for 4 patterns = 870
+Test time for pattern set = 8700 ns
+DETECTED: P0 F0
+NOT_DETECTED: P0 F1
+NOT_DETECTED: P0 F2
+DETECTED: P0 F3
+DETECTED: P0 F4
+NOT_DETECTED: P0 F5
+NOT_DETECTED: P0 F6
+DETECTED: P0 F7
+NOT_DETECTED: P0 F8
+DETECTED: P0 F9
+DETECTED: P0 F10
+NOT_DETECTED: P0 F11
+NOT_DETECTED: P0 F12
+DETECTED: P0 F13
+DETECTED: P0 F14
+NOT_DETECTED: P0 F15
+DETECTED: P0 F16
+DETECTED: P0 F17
+DETECTED: P0 F18
+DETECTED: P0 F19
+DETECTED: P0 F20
+DETECTED: P0 F21
+DETECTED: P0 F22
+DETECTED: P0 F23
+DETECTED: P0 F24
+DETECTED: P0 F25
+DETECTED: P0 F26
+DETECTED: P0 F27
+DETECTED: P0 F28
+DETECTED: P0 F29
+DETECTED: P0 F30
+DETECTED: P0 F31
+DETECTED: P0 F32
+DETECTED: P0 F33
+DETECTED: P0 F34
+DETECTED: P0 F35
+NOT_DETECTED: P1 F0
+DETECTED: P1 F1
+DETECTED: P1 F2
+NOT_DETECTED: P1 F3
+NOT_DETECTED: P1 F4
+DETECTED: P1 F5
+DETECTED: P1 F6
+NOT_DETECTED: P1 F7
+DETECTED: P1 F8
+NOT_DETECTED: P1 F9
+NOT_DETECTED: P1 F10
+DETECTED: P1 F11
+DETECTED: P1 F12
+NOT_DETECTED: P1 F13
+NOT_DETECTED: P1 F14
+DETECTED: P1 F15
+DETECTED: P1 F16
+DETECTED: P1 F17
+DETECTED: P1 F18
+DETECTED: P1 F19
+DETECTED: P1 F20
+DETECTED: P1 F21
+DETECTED: P1 F22
+DETECTED: P1 F23
+DETECTED: P1 F24
+DETECTED: P1 F25
+DETECTED: P1 F26
+DETECTED: P1 F27
+DETECTED: P1 F28
+DETECTED: P1 F29
+DETECTED: P1 F30
+DETECTED: P1 F31
+DETECTED: P1 F32
+DETECTED: P1 F33
+DETECTED: P1 F34
+DETECTED: P1 F35
+NOT_DETECTED: P2 F0
+NOT_DETECTED: P2 F1
+NOT_DETECTED: P2 F2
+DETECTED: P2 F3
+DETECTED: P2 F4
+NOT_DETECTED: P2 F5
+NOT_DETECTED: P2 F6
+DETECTED: P2 F7
+NOT_DETECTED: P2 F8
+DETECTED: P2 F9
+DETECTED: P2 F10
+NOT_DETECTED: P2 F11
+NOT_DETECTED: P2 F12
+DETECTED: P2 F13
+DETECTED: P2 F14
+NOT_DETECTED: P2 F15
+DETECTED: P2 F16
+DETECTED: P2 F17
+DETECTED: P2 F18
+DETECTED: P2 F19
+DETECTED: P2 F20
+DETECTED: P2 F21
+DETECTED: P2 F22
+DETECTED: P2 F23
+DETECTED: P2 F24
+DETECTED: P2 F25
+DETECTED: P2 F26
+DETECTED: P2 F27
+DETECTED: P2 F28
+DETECTED: P2 F29
+DETECTED: P2 F30
+DETECTED: P2 F31
+DETECTED: P2 F32
+DETECTED: P2 F33
+DETECTED: P2 F34
+DETECTED: P2 F35
+NOT_DETECTED: P3 F0
+NOT_DETECTED: P3 F1
+DETECTED: P3 F2
+NOT_DETECTED: P3 F3
+NOT_DETECTED: P3 F4
+DETECTED: P3 F5
+DETECTED: P3 F6
+NOT_DETECTED: P3 F7
+DETECTED: P3 F8
+NOT_DETECTED: P3 F9
+NOT_DETECTED: P3 F10
+DETECTED: P3 F11
+DETECTED: P3 F12
+NOT_DETECTED: P3 F13
+NOT_DETECTED: P3 F14
+DETECTED: P3 F15
+DETECTED: P3 F16
+DETECTED: P3 F17
+DETECTED: P3 F18
+DETECTED: P3 F19
+DETECTED: P3 F20
+DETECTED: P3 F21
+DETECTED: P3 F22
+DETECTED: P3 F23
+DETECTED: P3 F24
+DETECTED: P3 F25
+DETECTED: P3 F26
+DETECTED: P3 F27
+DETECTED: P3 F28
+DETECTED: P3 F29
+DETECTED: P3 F30
+DETECTED: P3 F31
+DETECTED: P3 F32
+DETECTED: P3 F33
+DETECTED: P3 F34
+DETECTED: P3 F35
+P0 detected = 28/36
+P1 detected = 28/36
+P2 detected = 27/36
+P3 detected = 27/36
+Fault_ID  D_bit  SA  P0 P1 P2 P3  Union
+0         0     0   1  0  0  0    1
+1         0     1   0  1  0  0    1
+2         1     0   0  1  0  1    1
+3         1     1   1  0  1  0    1
+4         2     0   1  0  1  0    1
+5         2     1   0  1  0  1    1
+6         3     0   0  1  0  1    1
+7         3     1   1  0  1  0    1
+8         4     0   0  1  0  1    1
+9         4     1   1  0  1  0    1
+10         5     0   1  0  1  0    1
+11         5     1   0  1  0  1    1
+12         6     0   0  1  0  1    1
+13         6     1   1  0  1  0    1
+14         7     0   1  0  1  0    1
+15         7     1   0  1  0  1    1
+16         8     0   1  1  1  1    1
+17         8     1   1  1  1  1    1
+18         9     0   1  1  1  1    1
+19         9     1   1  1  1  1    1
+20         10     0   1  1  1  1    1
+21         10     1   1  1  1  1    1
+22         11     0   1  1  1  1    1
+23         11     1   1  1  1  1    1
+24         12     0   1  1  1  1    1
+25         12     1   1  1  1  1    1
+26         13     0   1  1  1  1    1
+27         13     1   1  1  1  1    1
+28         14     0   1  1  1  1    1
+29         14     1   1  1  1  1    1
+30         15     0   1  1  1  1    1
+31         15     1   1  1  1  1    1
+32         16     0   1  1  1  1    1
+33         16     1   1  1  1  1    1
+34         17     0   1  1  1  1    1
+35         17     1   1  1  1  1    1
+
+=== FINAL SUMMARY ===
+Scan FFs = 6/18
+Number of patterns = 4
+Observation cycles per pattern = 192
+Pattern-set test cycles (including reset/preparation) = 870
+Pattern-set test time = 8700 ns
+Union detected = 36/36
+Selected RTL fault coverage = 100.00%
+Errors = 0
+PASS: SCOAP partial-scan 36 RTL fault campaign
+$finish called at time : 330606 ns : File "C:/Users/phucn/Documents/DFT_Design for Test/Project/tb/tb_uart_tx_partial_scoap_fault_campaign36.v" Line 446

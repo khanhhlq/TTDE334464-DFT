@@ -1,0 +1,11 @@
+read_verilog -sv -defer -I "C:/Users/phucn/Documents/DFT_Design for Test/Project/code/rtl/full_scan" -I "C:/Users/phucn/Documents/DFT_Design for Test/Project/code/rtl/common" "C:/Users/phucn/Documents/DFT_Design for Test/Project/code/rtl/full_scan/uart_tx_scan.v"
+read_verilog -sv -defer -I "C:/Users/phucn/Documents/DFT_Design for Test/Project/code/rtl/full_scan" -I "C:/Users/phucn/Documents/DFT_Design for Test/Project/code/rtl/common" "C:/Users/phucn/Documents/DFT_Design for Test/Project/code/rtl/common/scan_dff.v"
+hierarchy -check -top uart_tx_scan
+synth -top uart_tx_scan -flatten -nofsm -noabc
+dffunmap
+abc -g AND,OR,XOR,XNOR
+clean
+check -assert
+stat
+write_verilog -noattr "C:/Users/phucn/Documents/DFT_Design for Test/Project/code/build/tx_full_scan/netlist.v"
+write_json "C:/Users/phucn/Documents/DFT_Design for Test/Project/code/build/tx_full_scan/netlist.json"

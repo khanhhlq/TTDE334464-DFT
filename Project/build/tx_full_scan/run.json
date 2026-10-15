@@ -1,0 +1,15 @@
+{
+  "top": "uart_tx_scan",
+  "analysis": "full-scan-model",
+  "dff_count": 18,
+  "fixed_inputs": {
+    "rst": 0,
+    "scan_en": 0
+  },
+  "sources": [
+    "C:\\Users\\phucn\\Documents\\DFT_Design for Test\\Project\\code\\rtl\\full_scan\\uart_tx_scan.v",
+    "C:\\Users\\phucn\\Documents\\DFT_Design for Test\\Project\\code\\rtl\\common\\scan_dff.v"
+  ],
+  "constant_policy": "No post-constraint constant folding",
+  "csv": "C:\\Users\\phucn\\Documents\\DFT_Design for Test\\Project\\code\\results\\tx_full_scan_scoap.csv"
+}

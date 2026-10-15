@@ -1,0 +1,43 @@
+Time resolution is 1 ps
+BUILD: FUNCTIONAL_FAULT_CAMPAIGN_V3_EXPECTED_FIXED
+Scan disabled; observe only TX and READY.
+DETECTED: F0 first_cycle=16
+  TX good=1 faulty=0 READY good=0 faulty=0
+CHECK: F0 expected=16 actual=16 errors_before_check=0
+DETECTED: F1 first_cycle=8
+  TX good=0 faulty=1 READY good=0 faulty=0
+CHECK: F1 expected=8 actual=8 errors_before_check=0
+DETECTED: F2 first_cycle=16
+  TX good=1 faulty=0 READY good=0 faulty=0
+CHECK: F2 expected=16 actual=16 errors_before_check=0
+DETECTED: F3 first_cycle=8
+  TX good=0 faulty=1 READY good=0 faulty=0
+CHECK: F3 expected=8 actual=8 errors_before_check=0
+DETECTED: F4 first_cycle=16
+  TX good=1 faulty=0 READY good=0 faulty=0
+CHECK: F4 expected=16 actual=16 errors_before_check=0
+DETECTED: F5 first_cycle=8
+  TX good=0 faulty=1 READY good=0 faulty=0
+CHECK: F5 expected=8 actual=8 errors_before_check=0
+DETECTED: F6 first_cycle=16
+  TX good=1 faulty=0 READY good=0 faulty=0
+CHECK: F6 expected=16 actual=16 errors_before_check=0
+DETECTED: F7 first_cycle=8
+  TX good=0 faulty=1 READY good=0 faulty=0
+CHECK: F7 expected=8 actual=8 errors_before_check=0
+Fault_ID  scan_d_bit  SA_value  Detected  First_cycle
+0         11          0         1         16
+1         11          1         1         8
+2         12          0         1         16
+3         12          1         1         8
+4         13          0         1         16
+5         13          1         1         8
+6         14          0         1         16
+7         14          1         1         8
+Functional byte = FF
+Observation budget per trial = 192 cycles
+Detected = 8/8
+Selected RTL fault coverage = 100.00%
+Errors = 0
+PASS: functional-only selected RTL fault campaign
+$finish called at time : 15796 ns : File "C:/Users/phucn/Documents/DFT_Design for Test/Project/tb/tb_uart_tx_functional_fault_campaign.v" Line 311
